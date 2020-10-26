@@ -5,7 +5,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<link rel="stylesheet" href="css/bootstrap.css">
-		<title>Inicio</title>			
+    <title>Inicio</title>		
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
     </head>
 
 
@@ -46,12 +47,51 @@
             position: right: ;
         }
 
+
+        .appWhatsapp {
+				position: fixed;
+				left: 15px;
+				bottom: 20px;
+				width: 65px;
+				z-index: 1000;
+			}
+	
+			.appWhatsapp img{
+				width: 100%;
+				height: auto;
+			}
+
 	
 
 		
 
 
-	</style>
+  </style>
+  
+  <div id="fb-root"></div>
+		<script>
+		  window.fbAsyncInit = function() {
+			FB.init({
+			  xfbml            : true,
+			  version          : 'v7.0'
+			});
+		  };
+  
+		  (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+  
+		<!-- Your Chat Plugin code -->
+		<div class="fb-customerchat"
+		  attribution=setup_tool
+		  page_id="100804208370701"
+	theme_color="#7646ff"
+	logged_in_greeting="Bienvenido, ¿En que te podemos ayudar?"
+	logged_out_greeting="Bienvenido, ¿En que te podemos ayudar?">
 
   
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
@@ -59,7 +99,7 @@
         <div class="container">
             <!-- Nos sirve para agregar un logotipo al menu -->
             <a href="plantilla.html" class="navbar-brand">
-                <img class="logo" src="logo terminado.png">
+                <img class="logo" src="img/logo terminado.png">
             </a>
             
             
@@ -71,13 +111,11 @@
                           <a class="nav-link" href="inicio.html">INICIO<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">lOGOS</a>
+                          <a class="nav-link" href="logos.html">lOGOS</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="comerial.html">COMERCIAL</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">OTRA PAGINA</a>
+                       
                         </li>
                       </ul>
                     </div>
@@ -93,14 +131,14 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="carru1ed.jpeg" class="d-block w-100" alt="...">
+                    <img src="img/carru1ed.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Somos tu mejor opción</h5>
                       <p>Date esta oportunidad</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="carrued.jpeg" class="d-block w-100" alt="...">
+                    <img src="img/carrued.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                   </div>
@@ -132,7 +170,7 @@
                                 <div class="row mt-3">
                                     <div class="col-sm-12 col-md-6 col-lg-6">
                                         <div class="card">
-                                            <img src="mision.png" class="card-img-top img-fluid" alt="">
+                                            <img src="img/mision.png" class="card-img-top img-fluid" alt="">
                                             <div class="card-body">
                                                 <h3 class="card-title">Misión</h3>
                                                 <p class="card-text">Con esteproyecto se quiere traer una pequeñ solución para jovenes que se vean afectados de forma emocional, sentimental y socialmente con comportamientos detonantes por maltrato, bullying, problemas familiares u otra situación.</p>
@@ -145,10 +183,10 @@
                                     
                                         <div class="col-sm-12 col-md-6 col-lg-6">
                                             <div class="card">
-                                                <img src="vision .png" class="card-img-top img-fluid" alt="">
+                                                <img src="img/vision .png" class="card-img-top img-fluid" alt="">
                                                 <div class="card-body">
                                                     <h3 class="card-title">Visión</h3>
-                                                    <p class="card-text">En el año 2021 se logrará llegar a una met establecida de jovenes que reflejaron un cmabio con las ayudas psicologicasprestadas por parte de nuestro proyecto y equipo colaborativo viendo una mejora en sus hogares y vida cotidiana.</p>
+                                                    <p class="card-text">En el año 2021 se logrará llegar a una meta establecida de jovenes que reflejaron un cmabio con las ayudas psicologicasprestadas por parte de nuestro proyecto y equipo colaborativo viendo una mejora en sus hogares y vida cotidiana.</p>
                                                     
                                                 </div>
                                             </div>
@@ -157,8 +195,57 @@
 
                                     <hr>
 
-                                 <div class="container">
-                                     <div class="row">
+                                  </div>
+
+                                  <div class="col-sm-12 col-md-12 col-lg-1">
+                            
+                                  </div>
+
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-1">
+                          
+                                </div>
+
+                              </div>
+
+                              <div class="col-sm-12 col-md-12 col-lg-1">
+                        
+                              </div>
+
+
+                                    <div class="container">
+                                      <div class="row mt-3">
+                                          <div class="col-sm-12 col-md-12 col-lg-12">
+                                              <div class="card">
+                                                  <div class="card-body">
+                                                      <h1 class="mb-3"> MANUAL DE IDENTIDAD</h1>
+                                                      Dando una mejor explicación de nuestro proyecto utilizamos esta presentación donde se lleva más a fondo los detalles en cuanto a colores, tipografia, usos y demás formas que se puede utilizar. 
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                   
+                                      <div class="container-fluid">
+                                      <div class="row">
+                                          <div class="col">
+                                              <div class="embed-responsive embed-responsive-21by9">
+                                                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQvEAa-G8rcKgqDP7-Ok4j7s6ZPCsixysP7PtLnUad_2NAqCx2MbMkmJ2CPhT942w/embed?start=true&loop=true&delayms=5000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                                                </div>
+                                          </div>
+                                      </div>
+                                   </div>
+
+                                  </div>
+
+                              
+
+
+
+                                
+                                <div class="container">
+                                     <div class="row mt-3">
                                          <div class="col-12">
                                             <form>
                                                 <div class="form-group">
@@ -191,6 +278,9 @@
                     </div>
                     
                 </section>
+
+                <a class="appWhatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=573122782315&text=Bienvenidos!%20en%20que%20te%20podemos%20ayudar"><img src="img/whatsapp.png" hwight></a>	
+
 
 
 
